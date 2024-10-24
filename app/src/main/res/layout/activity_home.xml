@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.home.HomePage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/myriadpro_bold"
+                android:text="@string/main_cat"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/main_cat_auto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:dropDownHeight="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/main_cat"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/myriadpro_bold"
+                android:text="@string/sub_cat"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/sub_cat_auto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/ic_arrow_down"
+                android:dropDownHeight="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/sub_cat"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/output_text"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="10sp"
+                android:fontFamily="@font/myriadpro_bold"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirm_background"
+                android:text="Next"
+                android:id="@+id/next_btn"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/myriadpro_bold"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:orientation="horizontal"
+        android:padding="30dp">
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/confirm_background"
+            android:fontFamily="@font/myriadpro_simibold"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="5dp"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mazady</string>
+    <string name="main_cat">Main Category</string>
+    <string name="sub_cat">Sub Category</string>
+    <string name="process_type">Process Type</string>
+    <string name="confirm">Confirm</string>
+    <string name="reset">Reset</string>
+</resources>
